@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="cordova-plugin-datawedge" version="1.0.0"
+<plugin id="cordova-plugin-datawedge-auto" version="1.0.0"
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <name>DataWedge</name>
-    <description>Cordova plugin to receive barcode scans from Zebra DataWedge via broadcast intents.</description>
+    <name>DataWedge Auto</name>
+    <description>Cordova plugin para Zebra DataWedge com criação automática de profile.</description>
     <license>MIT</license>
-    <keywords>zebra,datawedge,barcode,scanner</keywords>
+    <keywords>zebra,datawedge,barcode,scanner,auto,profile</keywords>
 
     <js-module name="datawedge" src="www/datawedge.js">
         <clobbers target="DataWedge" />

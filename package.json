@@ -1,9 +1,9 @@
 {
-    "name": "cordova-plugin-datawedge",
+    "name": "cordova-plugin-datawedge-auto",
     "version": "1.0.0",
-    "description": "Cordova plugin to receive barcode scans from Zebra DataWedge via broadcast intents.",
+    "description": "Cordova plugin para Zebra DataWedge com cria\u00e7\u00e3o autom\u00e1tica de profile.",
     "cordova": {
-        "id": "cordova-plugin-datawedge",
+        "id": "cordova-plugin-datawedge-auto",
         "platforms": [
             "android"
         ]
@@ -13,6 +13,7 @@
         "zebra",
         "datawedge",
         "barcode",
+        "scanner",
         "ecosystem:cordova"
     ],
     "author": "Agil Desenvolvimento",

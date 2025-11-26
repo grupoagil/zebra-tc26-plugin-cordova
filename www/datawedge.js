@@ -2,12 +2,19 @@ var exec = require('cordova/exec');
 
 var DataWedge = {
     /**
-     * Start listening for barcode scans from DataWedge.
-     * successCallback will be called every time a barcode is read:
-     *   function(result) { console.log(result.barcode); }
+     * Inicia o listener para receber leituras do DataWedge.
+     * callback de sucesso é chamado várias vezes, sempre que houver um scan.
      */
     startListening: function (successCallback, errorCallback) {
         exec(successCallback, errorCallback, 'DataWedgePlugin', 'startListening', []);
+    },
+
+    /**
+     * (Opcional) Força recriar/atualizar o profile manualmente.
+     * Normalmente o plugin já faz isso automaticamente na inicialização.
+     */
+    createOrUpdateProfile: function (successCallback, errorCallback) {
+        exec(successCallback, errorCallback, 'DataWedgePlugin', 'createOrUpdateProfile', []);
     }
 };
 
